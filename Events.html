@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Edinburgh | Events</title>
+
+    <link rel="stylesheet" href="Style-Events.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!-- <script src="script.js" defer></script>  -->
+    <script src="/gallery-script.js" defer></script>
+</head>
+<body>
+
+    
+    <!---------------- Header ------------------->
+    <header id="head">
+        <div class="main-pos">
+            <header class="header glass-effect">
+                <div class="logo">
+                    <a href="index.html"> <img src="./Images/Other/Logo/logo-black.png"></a>
+                </div>
+                <ul class="navbar">
+                    <li class="navlink"><a href="./index.html">Home</a></li>
+                    <li class="navlink"><a href="./History.html">History</a></li>
+                    <li class="navlink"><a href="./Do&Go.html">Do & Go</a></li>
+                    <li class="navlink"><a id="current" href="./Events.html">Events</a></li>
+                    <li class="navlink"><a href="./Contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="uil uil-bars"></i>
+                </div> 
+            </header> 
+        </div>
+
+    </header>
+
+    <!----------------Progress Bar ------------------->
+
+    <div id="_progress"></div>
+
+    <!----------------End Progress Bar ------------------->
+
+
+    <!-------------- Content ----------------------->
+    
+    <div id="first-title">
+        <div id="Page">
+            <h1>Events</h1>
+        </div>
+        <div id="Title">
+            <h2>Live it to the fullest</h2>
+        </div>
+    </div>
+    
+    <section id="content">
+        <div id="drop-down">
+            <h2>July</h2>
+            <div id="arrow">
+                <img src="Images/Icons/1x/drop-down-arrow.png">
+            </div>
+        </div>
+
+        <div class="weeks">
+            <div id="week-1">
+                <h2>Week 1</h2>
+                <div class="events">
+                    <a href="https://www.capitaltheatres.com/whats-on/anton-and-giovanni-him-me" target="_blank" class="event-card shadow" id="event-week-1-1">
+                        <div class="event-title"> Anton and Giovanni Edinburgh</div>
+                    </a>
+                    <a href="https://www.atgtickets.com/shows/disneys-the-lion-king/edinburgh-playhouse/" target="_blank" class="event-card shadow" id="event-week-1-2">
+                        <div class="event-title"> The Lion King</div>
+                    </a>
+                    <a href="https://www.thenickelodeonexperience.co.uk/" target="_blank" class="event-card shadow" id="event-week-1-3">
+                        <div class="event-title"> Nickelodeon Experience</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="weeks">
+            <div id="week-3">
+                <h2>Week 3</h2>
+                <div class="events">
+                    <a href="https://www.atgtickets.com/shows/mrs-browns-boys-dlive-show/edinburgh-playhouse/" target="_blank" class="event-card shadow" id="event-week-3-1">
+                        <div class="event-title"> Mrs Brown's Boys D'Live Show</div>
+                    </a>
+                    <a href="https://www.edinburghjazzfestival.com/" target="_blank" class="event-card shadow" id="event-week-3-2">
+                        <div class="event-title"> Jazz and Blues Festival</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------- End Content ----------------------->
+
+
+    <!-----------------------Image Gallery-------------------------->
+
+    <h1 id="gallery-title">Some pictures from the past!</h1>
+    <div class="container">
+        <div class="carousel" data-carousel>
+            <div class="slide-show">
+                <img class=thumb shadow main-img name="slide" src="/Images/Events/carousel/5.jpg" alt="main carousel image">
+                <div class="buttons">
+                    <i class="carousel-button prev uil uil-arrow-circle-left" onclick="prevImage()"></i>
+                    <i class="carousel-button next uil uil-arrow-circle-right" onclick="nextImage()"></i>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="thumbnails">
+            <a><img class="small-thumb shadow" onclick="thumbnails(0)" src="/Images/Events/carousel/1.jpg" alt="image with people under red umbrellas"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(1)" src="/Images/Events/carousel/2.jpg" alt="image with people under red umbrellas"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(2)" src="/Images/Events/carousel/3.jpeg" alt="image with street shop"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(3)" src="/Images/Events/carousel/4.jpg" alt="image with fireworks"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(4)" src="/Images/Events/carousel/5.jpg" alt="image with Edinburgh view"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(5)" src="/Images/Events/carousel/6.jpg" alt="image with fireworks"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(6)" src="/Images/Events/carousel/7.jpg" alt="image from concert in Edinburgh"></a>
+            <a><img class="small-thumb shadow" onclick="thumbnails(7)" src="/Images/Events/carousel/8.jpg" alt="image christmas"></a>
+        </div>
+    </div>
+
+
+
+    <!-----------------------End Image Gallery-------------------------->
+
+
+   <!---------------- Footer ------------------->
+
+   <div id="footer">
+    <div id="city"><img src="./Images/Images/City_Line.png"></div>
+    <div class="footer-logo">
+        <a href="index.html"> <img src="./Images/Other/Logo/Logo-white.png"></a>
+    </div>
+
+    <div class="social">
+        <div id="facebook" class="social-hvr"> 
+            <a href="https://www.facebook.com" target="_blank"> <img src="./Images/Icons/social/facebook.png"></a>
+        </div>
+        <div id="instagram" class="social-hvr"> 
+            <a href="https://www.instagram.com" target="_blank"> <img src="./Images/Icons/social/instagram.png"></a>
+        </div>
+        <div id="twitter" class="social-hvr"> 
+            <a href="https://twitter.com" target="_blank"> <img src="./Images/Icons/social/twitter.png"></a>
+        </div>
+        <div id="youtube" class="social-hvr"> 
+            <a href="https://www.youtube.com" target="_blank"> <img src="./Images/Icons/social/Youtube.png"></a>
+        </div>
+        <div id="pinterest" class="social-hvr"> 
+            <a href="https://www.pinterest.com" target="_blank"> <img src="./Images/Icons/social/Pinterest.png"></a>
+        </div>
+    </div>
+
+    <div class="navigate">
+        <a href="index.html">Home</a>
+        <a href="History.html">History</a>
+        <a href="Do&Go.html" id="current">Do&Go</a>
+        <a href="Events.html">Events</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    
+    <div class="copyright">
+        <p id="copy">&copy; 2022 All Rights Recieved</p>
+        <a href="#">Terms of Use</a>
+        <p id="line">|</p>
+        <a href="/sitemap.html">Sitemap</a>
+    </div>
+</div>
+
+
+<!---------------- End Footer ------------------->
+
+</body>
+</html>

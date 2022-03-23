@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Edinburgh | Home</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!---------------- Header ------------------->
+    
+    <header id="head">
+        <div class="main-pos">
+            <section id="main-image"></section>
+            
+            <header class="header glass-effect">
+                <div class="logo">
+                    <a href="index.html"> <img src="./Images/Other/Logo/logo-black.png"></a>
+                </div>
+                <ul class="navbar">
+                    <li class="navlink"><a id="current" href="./index.html">Home</a></li>
+                    <li class="navlink"><a href="./History.html">History</a></li>
+                    <li class="navlink"><a href="./Do&Go.html">Do & Go</a></li>
+                    <li class="navlink"><a href="./Events.html">Events</a></li>
+                    <li class="navlink"><a href="./Contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="uil uil-bars"></i>
+                </div> 
+            </header> 
+            
+           
+        </div>
+
+        
+    <!----------------Progress Bar ------------------->
+
+    <div id="_progress"></div>
+
+    <!----------------End Progress Bar ------------------->
+    
+        
+        <!---------------- Cards ------------------->
+        <section id="Card">  
+            <div id="pop_p" class="card-design shaddow glass-effect">
+                <div id="pop"></div>
+                <p class="info-title">Population:</p>
+                <p class="numbers">542,599</p>
+            </div>
+            <div id="uni_p" class="card-design shaddow glass-effect">
+                <div id="uni"></div>
+                <p class="info-title">Universities:</p>
+                <p class="numbers">6</p>
+            </div>
+            <div id="stud_p"class="card-design shaddow glass-effect">
+                <div id="stud"></div>
+                <p class="info-title">Students:</p>
+                <p class="numbers">35,375 (2019/20)</p>
+            </div>
+            <div id="parks_p" class="card-design shaddow glass-effect">
+                <div id="parks"></div>
+                <p class="info-title">Parks:</p>
+                <p class="numbers">35</p>
+            </div>
+        </section>
+        
+        <!---------------- End Cards ------------------->
+    </header>
+    
+
+    
+
+    <!---------------- End Header ------------------->
+
+
+
+    <!---------------- Main Body ------------------->
+
+    <section class="main-cards reveal fade-bottom">
+        <div class="main-cards-title">
+            <h2>Popular Things To Do</h2>
+            <a class="cool-link" href="./Do&Go.html">See More</a>
+        </div>
+        <section class="main-cards-images">
+            <div class="category-card shaddow glass-effect">
+                <div id="to-do-card-image-1" class="card-image"></div>
+                <p class="category-title">Take long walks in the beautiful streets</p>
+                <a href="https://www.walkhighlands.co.uk/lothian/edinburgh.shtml" target="_blank">Learn More</a> 
+            </div>
+            <div class="category-card shaddow glass-effect">
+                <div id="to-do-card-image-2" class="card-image"></div>
+                <p class="category-title">Eat from the street food markets</p>
+                <a href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/edinburghs-best-street-food-markets-and-events/" target="_blank">Learn More</a> 
+            </div>
+            <div class="category-card shaddow glass-effect">
+                <div id="to-do-card-image-3" class="card-image"></div>
+                <p class="category-title">Write or read a book in a cafe</p>
+                <a href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/the-10-best-cafes-and-coffeehouses-in-edinburgh/" target="_blank">Learn More</a> 
+            </div>
+        </section>
+    </section>
+
+
+    <section class="main-cards-2 reveal fade-bottom">
+        <div class="main-cards-title">
+            <h2>Places To Go</h2>
+            <a class="cool-link" href="./Do&Go.html">See More</a>
+        </div>
+        <section class="main-cards-images">
+            <div class="category-card shaddow glass-effect" >
+                <div id="go-card-image-1" class="card-image"></div>
+                <p class="category-title">Watch the view from the Calton Hill</p>
+                <a  href="https://en.wikipedia.org/wiki/Calton_Hill" target="_blank">Learn More</a>
+            </div>
+            <div class="category-card shaddow glass-effect">
+                <div id="go-card-image-2" class="card-image"></div>
+                <p class="category-title">Take photos of the popular Scott Monument</p>
+                <a href="https://en.wikipedia.org/wiki/Scott_Monument" target="_blank">Learn More</a>
+            </div>
+            <div class="category-card shaddow glass-effect">
+                <div id="go-card-image-3" class="card-image"></div>
+                <p class="category-title">Enjoy a walk near the Leith River in Dean Village</p>
+                <a href="https://en.wikipedia.org/wiki/Dean_Village" target="_blank">Learn More</a>
+            </div>
+        </section>
+    </section>
+
+    <!---------------- End Main Body ------------------->
+
+
+    <!----------------------Random Quotes-------------------------->
+    <div class="reveal fade-bottom">
+        <h2 class="quote-title">Quotes about Edinburgh</h2>
+        <div class="quote-container">
+            <div class="quote-author">
+                <p id="quote"></p>
+                <p id="author"></p>
+            </div>
+            <button id="generator">Random Quote</button>
+        </div>
+    </div>
+
+
+    <!----------------------End Random Quotes-------------------------->
+
+
+    <!---------------- Reviews ------------------->
+
+    <div class = "reviews reveal fade-bottom">
+        <h2>People about Edinburgh</h2>
+        <div id="review-cards">
+            <div class ="review-design glass-effect" id="first-review">
+                <div class="first-row">
+                    <div class="reviewer-image" id="reviewer-1"></div>
+                    <div class="quotes"></div>
+                </div>        
+                <p class="name">Jack</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, repudiandae!</p>
+            </div>
+            <div class ="review-design glass-effect" id="second-review">
+                <div class="first-row">
+                    <div class="reviewer-image" id="reviewer-2"></div>
+                    <div class="quotes"></div>
+                </div>        
+                <p class="name">Luna</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, repudiandae!</p>
+            </div>
+            <div class ="review-design glass-effect" id="third-review">
+                <div class="first-row">
+                    <div class="reviewer-image" id="reviewer-3"></div>
+                    <div class="quotes"></div>
+                </div>        
+                <p class="name">Michael</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, repudiandae!</p>
+            </div>
+        </div>
+        <div id="city"><img src="./Images/Images/City_Line.png" alt="Solid Black City Graphic"></div>
+    </div>
+
+
+    <!---------------- End Reviews ------------------->
+
+
+    <!---------------- Footer ------------------->
+
+    <div id="footer">
+        <div class="footer-logo">
+            <a href="index.html"> <img src="./Images/Other/Logo/Logo-white.png" alt="logo"></a>
+        </div>
+
+        <div class="social">
+            <div id="facebook" class="social-hvr"> 
+                <a href="https://www.facebook.com" target="_blank"> <img src="./Images/Icons/social/facebook.png" alt="facebook"></a>
+            </div>
+            <div id="instagram" class="social-hvr"> 
+                <a href="https://www.instagram.com" target="_blank"> <img src="./Images/Icons/social/instagram.png" alt="instagram"></a>
+            </div>
+            <div id="twitter" class="social-hvr"> 
+                <a href="https://twitter.com" target="_blank"> <img src="./Images/Icons/social/twitter.png" alt="twitter"></a>
+            </div>
+            <div id="youtube" class="social-hvr"> 
+                <a href="https://www.youtube.com" target="_blank"> <img src="./Images/Icons/social/Youtube.png" alt="youtube"></a>
+            </div>
+            <div id="pinterest" class="social-hvr"> 
+                <a href="https://www.pinterest.com" target="_blank"> <img src="./Images/Icons/social/Pinterest.png" alt="pinterest"></a>
+            </div>
+        </div>
+
+        <div class="navigate">
+            <a href="index.html" id="current">Home</a>
+            <a href="History.html">History</a>
+            <a href="Do&Go.html">Do&Go</a>
+            <a href="Events.html">Events</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        
+        <div class="copyright">
+            <p id="copy">&copy; 2022 All Rights Recieved</p>
+            <a href="#">Terms of Use</a>
+            <p id="line">|</p>
+            <a href="/sitemap.html">Sitemap</a>
+        </div>
+    </div>
+
+
+    <!---------------- End Footer ------------------->
+</body>
+</html>

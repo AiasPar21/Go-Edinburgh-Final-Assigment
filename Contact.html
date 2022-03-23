@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Edinburgh | Contact</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="/form-script.js" defer></script>
+    <link rel="stylesheet" href="Style-Contact.css">
+</head>
+<body>
+    <!----------SVG Background animation------------>
+
+    <div class="animated-bg">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961.53 760">
+            <defs><style>.cls-1{fill:#19ffd6;}</style></defs>
+                <g id="three">
+                    <polygon class="cls-1" points="226.9 161 75.63 161 0 292 75.63 423 226.9 423 302.53 292 226.9 161"/>
+                </g>
+                <g id="two">
+                    <polygon class="cls-1" points="885.9 0 734.63 0 659 131 734.63 262 885.9 262 961.53 131 885.9 0"/>
+                </g>
+                <g id="one">
+                    <polygon class="cls-1" points="885.9 498 734.63 498 659 629 734.63 760 885.9 760 961.53 629 885.9 498"/>
+                </g>
+            </svg>
+    </div>
+    
+    <!----------End SVG Background animation------------>
+
+
+
+    <!---------------- Header ------------------->
+    <header id="head">
+        <div class="main-pos">
+            <header class="header glass-effect">
+                <div class="logo">
+                    <a href="index.html"> <img src="./Images/Other/Logo/logo-black.png"></a>
+                </div>
+                <ul class="navbar">
+                    <li class="navlink"><a href="./index.html">Home</a></li>
+                    <li class="navlink"><a href="./History.html">History</a></li>
+                    <li class="navlink"><a href="./Do&Go.html">Do & Go</a></li>
+                    <li class="navlink"><a href="./Events.html">Events</a></li>
+                    <li class="navlink"><a id="current" href="./Contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="uil uil-bars"></i>
+                </div> 
+            </header> 
+        </div>
+    </header>
+    <!----------------End Header ------------------->
+
+
+
+   <!----------------Progress Bar ------------------->
+
+   <div id="_progress"></div>
+
+   <!----------------End Progress Bar ------------------->
+
+
+
+
+    <!-------------- Contents -------------------->
+
+    
+    <section id="contents">
+        <div id="Page">
+            <h1>Contact Us</h1>
+        </div>
+        <div id="Title">
+            <h2>Ask us anything about Edinburgh!</h2>
+        </div>
+        <div class="contact-form">
+            <div id="information" class="shadow">
+                <h2>Contact Information</h2>
+                <div id="address">
+                    <div id="address-icon">
+                        <i class="uil uil-map-pin-alt"></i>
+                    </div>
+                    <h3>Fake Adress 32, 12345, Edinburgh UK</h3>
+                </div>    
+                <div id="info-mail">
+                    <div id="info-mail-icon">
+                        <i class="uil uil-envelope-alt"></i>
+                    </div>
+                    <h3>info@goedinburgh.eu</h3>
+                </div>    
+                <div id="info-phone">
+                    <div id="info-phone-icon">
+                        <i class="uil uil-phone-alt"></i>
+                    </div>
+                    <h3>0131 123 4567</h3>
+                </div>    
+
+                <div class="social">
+                    <div id="facebook"> 
+                        <a href="https://www.facebook.com/Edinburgh" target="_blank"> <img src="./Images/Icons/social/facebook.png"></a>
+                    </div>
+                    <div id="instagram"> 
+                        <a href="https://www.instagram.com/thisisedinburgh/?hl=el" target="_blank"> <img src="./Images/Icons/social/instagram.png"></a>
+                    </div>
+                    <div id="twitter"> 
+                        <a href="https://twitter.com/edinburgh?lang=el" target="_blank"> <img src="./Images/Icons/social/twitter.png"></a>
+                    </div>
+                    <div id="youtube"> 
+                        <a href="https://www.youtube.com/user/thisisedinburgh" target="_blank"> <img src="./Images/Icons/social/Youtube.png"></a>
+                    </div>
+                    <div id="pinterest"> 
+                        <a href="https://www.pinterest.com/Forever_Edinburgh/" target="_blank"> <img src="./Images/Icons/social/Pinterest.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form-design" class="shadow">
+                <form id="form">
+                    <div id="first-four">
+                        
+                        <div id="first-name">
+                            <div class="field">
+                                <label for="first-name">Name</label>
+                                <input class="form-element" id="first-name" type="text" placeholder="John">  
+                            </div>
+                            <p class="field-verify" id="verifyName"></p>
+                        </div>
+
+                        <div id="surname">
+                            <div class="field">
+                                <label for="first-name">Surname</label>
+                                <input class="form-element" id="surname" type="text" placeholder="Doe">  
+                            </div>
+                            <p class="field-verify" id="verifySurname"></p>
+                        </div>
+
+                        
+                        <div id="e-mail">
+                            <div class="field">
+                                <label class="category" for="e-mail">E-mail</label>
+                                <input class="form-element" id="e-mail" type="text" placeholder="yourmail@gmail.com">
+                            </div>
+                            <p class="field-verify" id="verifyMail"></p>
+                        </div>
+                        
+                        <div id="phone">
+                            <div class="field">
+                                <label for="phone">Phone</label>
+                                <input class="form-element" id="phone" type="text" placeholder="123555666">
+                            </div>
+                            <p class="field-verify" id="verifyPhone"></p>
+                        </div>
+
+                    </div>
+
+                    <div id="text">
+                        <label for= "message">Message</label>
+                        <textarea type="textarea" id="message" cols="100" rows="10" placeholder="Write something to us..."></textarea>
+                    </div>
+
+                    <p id="successText"></p>
+                    
+                    <div id="register">
+                        <button id="register-button" type="submit">Sent It</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-------------- End Contents -------------------->
+    
+
+
+   <!---------------- Footer ------------------->
+
+   <div id="footer">
+    <div id="city"><img src="./Images/Images/City_Line.png"></div>
+    <div class="footer-logo">
+        <a href="index.html"> <img src="./Images/Other/Logo/Logo-white.png"></a>
+    </div>
+
+    <div class="social">
+        <div id="facebook" class="social-hvr"> 
+            <a href="https://www.facebook.com" target="_blank"> <img src="./Images/Icons/social/facebook.png"></a>
+        </div>
+        <div id="instagram" class="social-hvr"> 
+            <a href="https://www.instagram.com" target="_blank"> <img src="./Images/Icons/social/instagram.png"></a>
+        </div>
+        <div id="twitter" class="social-hvr"> 
+            <a href="https://twitter.com" target="_blank"> <img src="./Images/Icons/social/twitter.png"></a>
+        </div>
+        <div id="youtube" class="social-hvr"> 
+            <a href="https://www.youtube.com" target="_blank"> <img src="./Images/Icons/social/Youtube.png"></a>
+        </div>
+        <div id="pinterest" class="social-hvr"> 
+            <a href="https://www.pinterest.com" target="_blank"> <img src="./Images/Icons/social/Pinterest.png"></a>
+        </div>
+    </div>
+
+    <div class="navigate">
+        <a href="index.html">Home</a>
+        <a href="History.html">History</a>
+        <a href="Do&Go.html">Do&Go</a>
+        <a href="Events.html">Events</a>
+        <a href="Contact.html" id="current">Contact</a>
+    </div>
+    
+    <div class="copyright">
+        <p id="copy">&copy; 2022 All Rights Recieved</p>
+        <a href="#">Terms of Use</a>
+        <p id="line">|</p>
+        <a href="/sitemap.html">Sitemap</a>
+    </div>
+</div>
+
+
+<!---------------- End Footer ------------------->
+
+</body>
+</html>

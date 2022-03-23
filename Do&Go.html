@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Edinburgh | Do & Go</title>
+
+    <link rel="stylesheet" href="Style-Do&Go.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <!---------------- Header ------------------->
+    <header id="head">
+        <div class="main-pos">
+            <header class="header glass-effect">
+                <div class="logo">
+                    <a href="index.html"> <img src="./Images/Other/Logo/logo-black.png"></a>
+                </div>
+                <ul class="navbar">
+                    <li class="navlink"><a href="./index.html">Home</a></li>
+                    <li class="navlink"><a href="./History.html">History</a></li>
+                    <li class="navlink"><a id="current" href="./Do&Go.html">Do & Go</a></li>
+                    <li class="navlink"><a href="./Events.html">Events</a></li>
+                    <li class="navlink"><a href="./Contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="uil uil-bars"></i>
+                </div> 
+            </header> 
+        </div>
+    </header>
+
+    <!----------------Progress Bar ------------------->
+
+    <div id="_progress"></div>
+
+    <!----------------End Progress Bar ------------------->
+
+    
+    <!----------------Things To Do------------------>
+    <div id="Page">
+        <h1>Do & Go</h1>
+    </div>
+    <div id="Title">
+        <h2>Explore</h2>
+    </div>
+   
+    <Section id="to-do">
+        <h1>Things To Do</h1>
+        <div class="cards">
+            <div class="thing-card shadow" id="first-to-do">
+                <div class="thing-image" id="first-to-do-image"></div>
+                <div class="thing-title">
+                    <h2>Long walks</h2>
+                    <div class="paragraph">
+                        <p>Scotland's capital city is perhaps the finest place in the UK for urban exploration on foot. The heart of the city, a World Heritage Site, is packed with attractions, fascinating buildings and a remarkable history. The famous castle sits proud on its rock at the top of the Old Town, a warren of medieval streets and alleyways sweeping down to Holyrood Palace and the Scottish Parliament at the foot of the Royal Mile. Here is Holyrood Park, surely one of the most dramatic city parks in the world, with the mini-mountain of Arthur's Seat at its heart.
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://www.walkhighlands.co.uk/lothian/edinburgh.shtml" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thing-card shadow" id="second-to-do">
+                <div class="thing-image" id="second-to-do-image"></div>
+                <div class="thing-title">
+                    <h2>Street food markets</h2>
+                    <div class="paragraph">
+                        <p>Any self-confessed foodie knows the whereabouts of a city’s food trucks like the back of their hand! Why sit cooped up inside when you could be roaming the romantic cobblestones of Scotland’s capital? Whether you want an indulgent grilled cheese or adventurous fusion, we’ve put together an Edinburgh street food guide so you can eat your way through each worldly cuisine.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/edinburghs-best-street-food-markets-and-events/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thing-card shadow" id="third-to-do">
+                <div class="thing-image" id="third-to-do-image"></div>
+                <div class="thing-title">
+                    <h2>Coffee places</h2>
+                    <div class="paragraph">
+                        <p>Edinburgh’s cup is overflowing with additions to its independent coffee scene. Specialist cafés are dotted all over the city, with everything from police boxes and canal boats to doughnut shops and trendy New Town basements giving the Scottish capital a perky, caffeinated edge. Culture Trip maps out the best spots for a coffee in Edinburgh.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/the-10-best-cafes-and-coffeehouses-in-edinburgh/" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!----------------End Things To Do------------------>
+
+    <!----------------To Go------------------>
+   
+    <Section id="places">
+        <h1>Places To Go</h1>
+        <div class="cards">
+            <div class="thing-card shadow" id="first-to-go">
+                <div class="thing-image" id="first-to-go-image"></div>
+                <div class="thing-title">
+                    <h2>Calton Hill</h2>
+                    <div class="paragraph">
+                        <p>Calton Hill is a hill in central Edinburgh, Scotland, situated beyond the east end of Princes Street and included in the city's UNESCO World Heritage Site. Views of, and from, the hill are often used in photographs and paintings of the city.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://en.wikipedia.org/wiki/Calton_Hill" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thing-card shadow" id="second-to-go">
+                <div class="thing-image" id="second-to-go-image"></div>
+                <div class="thing-title">
+                    <h2>Dean Village</h2>
+                    <div class="paragraph">
+                        <p>The mills of Dene were first mentioned in King David I's founding charter of Holyrood Abbey, usually dated c. 1145, in which he granted one of his mills of Dene to the Abbey.
+                            <br>
+                            <br>
+                            The area remained a separate village until the 19th century. In 1826, John Learmonth, a future Lord Provost of Edinburgh, purchased the Dean Estate from the Nisbets of Dean.
+                            <br>
+                            <br>
+                            A bridge was needed to access from one side of the high valley to the other (the low-lying village was more or less an irrelevance). The Cramond Road Trustees discarded plans by other engineers and insisted upon the use of Thomas Telford. They also insisted that the bridge be toll-free. This was built 1831-2 and opened in 1833.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://en.wikipedia.org/wiki/Dean_Village" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thing-card shadow" id="third-to-go">
+                <div class="thing-image" id="third-to-go-image"></div>
+                <div class="thing-title">
+                    <h2>Scott Monument</h2>
+                    <div class="paragraph">
+                        <p>The Scott Monument is a Victorian Gothic monument to Scottish author Sir Walter Scott. It is the second largest monument to a writer in the world after the José Martí monument in Havana.[1] It stands in Princes Street Gardens in Edinburgh, opposite the Jenners department store on Princes Street and near to Edinburgh Waverley Railway Station, which is named after Scott's Waverley novels.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://en.wikipedia.org/wiki/Scott_Monument" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thing-card shadow" id="fourth-to-go">
+                <div class="thing-image" id="fourth-to-go-image"></div>
+                <div class="thing-title">
+                    <h2>The Jacobite Train</h2>
+                    <div class="paragraph">
+                        <p>The Jacobite Train is best known for its starring role in the Harry Potter films as the iconic Hogwarts Express. The Jacobite will take you on a journey on the West Highland Railway, offering you spectacular views over the countryside scenery enjoyed by Harry, Hermione and Ron on their journey to Hogwarts.</p>
+                    </div>
+                    <div class="read-more">
+                        <a href="https://www.introducingedinburgh.com/activities/2-day-scotland-tour" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!----------------End To Go------------------>
+
+
+
+   <!---------------- Footer ------------------->
+
+   <div id="footer">
+    <div id="city"><img src="./Images/Images/City_Line.png"></div>
+    <div class="footer-logo">
+        <a href="index.html"> <img src="./Images/Other/Logo/Logo-white.png"></a>
+    </div>
+
+    <div class="social">
+        <div id="facebook" class="social-hvr"> 
+            <a href="https://www.facebook.com" target="_blank"> <img src="./Images/Icons/social/facebook.png"></a>
+        </div>
+        <div id="instagram" class="social-hvr"> 
+            <a href="https://www.instagram.com" target="_blank"> <img src="./Images/Icons/social/instagram.png"></a>
+        </div>
+        <div id="twitter" class="social-hvr"> 
+            <a href="https://twitter.com" target="_blank"> <img src="./Images/Icons/social/twitter.png"></a>
+        </div>
+        <div id="youtube" class="social-hvr"> 
+            <a href="https://www.youtube.com" target="_blank"> <img src="./Images/Icons/social/Youtube.png"></a>
+        </div>
+        <div id="pinterest" class="social-hvr"> 
+            <a href="https://www.pinterest.com" target="_blank"> <img src="./Images/Icons/social/Pinterest.png"></a>
+        </div>
+    </div>
+
+    <div class="navigate">
+        <a href="index.html">Home</a>
+        <a href="History.html">History</a>
+        <a href="Do&Go.html" id="current">Do&Go</a>
+        <a href="Events.html">Events</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    
+    <div class="copyright">
+        <p id="copy">&copy; 2022 All Rights Recieved</p>
+        <a href="#">Terms of Use</a>
+        <p id="line">|</p>
+        <a href="/sitemap.html">Sitemap</a>
+    </div>
+</div>
+
+
+<!---------------- End Footer ------------------->
+
+</body>
+</html>
