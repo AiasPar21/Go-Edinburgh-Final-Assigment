@@ -5,7 +5,22 @@ gsap.from('#stud_p', {duration:1, x:'100vw', ease:'power2.in'});
 gsap.from('#pop_p', {duration:1, x:'-100vw',delay:0.1, ease:'power2.in'});
 gsap.from('#uni_p', {duration:1, x:'-100vw', ease:'power2.in'});
 
-
+//------------------------------Progress Bar------------------------------
+document.addEventListener(
+	"scroll",
+	function() {
+	  var scrollTop =
+		document.documentElement["scrollTop"] || document.body["scrollTop"];
+	  var scrollBottom =
+		(document.documentElement["scrollHeight"] ||
+		  document.body["scrollHeight"]) - document.documentElement.clientHeight;
+	  scrollPercent = scrollTop / scrollBottom * 100 + "%";
+	  document
+		.getElementById("_progress")
+		.style.setProperty("--scroll", scrollPercent);
+	},
+	{ passive: true }
+  );
 
 //-------------------------------------Reveal content while scrolling-----------------------------------
 function reveal() {
@@ -99,33 +114,6 @@ randomQuote();
 
 document.querySelector("#generator").addEventListener('click', randomQuote);
 
-
-
-
-
-
-
-
-//------------------------------Progress Bar------------------------------
-document.addEventListener(
-  "scroll",
-  function() {
-    var scrollTop =
-      document.documentElement["scrollTop"] || document.body["scrollTop"];
-    var scrollBottom =
-      (document.documentElement["scrollHeight"] ||
-        document.body["scrollHeight"]) - document.documentElement.clientHeight;
-    scrollPercent = scrollTop / scrollBottom * 100 + "%";
-    document
-      .getElementById("_progress")
-      .style.setProperty("--scroll", scrollPercent);
-  },
-  { passive: true }
-);
-
-
-
-//    https://alvarotrigo.com/blog/css-animations-scroll/    <-- animation on scroll
 
 
 
